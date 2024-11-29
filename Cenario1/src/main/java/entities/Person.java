@@ -42,12 +42,16 @@ public class Person {
     }
 
     public String toString() {
-        return name;
-
+        if (spouse != null) {
+            return name + " --- Married to: " + spouse.getName() + " -- Children: ";
+        }else{
+            return name + " -- single";
+        }
     }
 
     public void printFamilyTree( int numero) {
-        System.out.println(toString());
+        System.out.println(" ".repeat(numero) + toString());
+
         for (int i = 0; i < children.size(); i++) {
             children.get(i).printFamilyTree(numero + 1);
         }
