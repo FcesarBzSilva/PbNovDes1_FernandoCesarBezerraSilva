@@ -9,6 +9,9 @@ public class Main {
         Person lily = new Person("Lily");
         lily.addSpouse(new Person("Wilhelm"));
         lily.addChild(new Person("Bob"));
+        // Patriarch and matriarch
+        Person opa = new Person("Opa", lily);
+
 
         lily.printFamilyTree(0);
     }

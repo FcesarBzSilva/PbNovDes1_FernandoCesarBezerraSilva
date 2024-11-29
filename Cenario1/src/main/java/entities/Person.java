@@ -14,6 +14,7 @@ public class Person {
 
     public Person(String name, Person parent) {
         this.name = name;
+        parent.addChild(this);
     }
 
     //Getter and setter
@@ -41,6 +42,7 @@ public class Person {
         this.spouse = spouse;
     }
 
+    @Override
     public String toString() {
         if (spouse != null) {
             return name + " --- Married to: " + spouse.getName() + " -- Children: ";
