@@ -32,4 +32,12 @@ public class Person {
     public List<Person> getChildren() {
         return children;
     }
+
+    public void addChild(Person child) {
+        children.add(child);
+    }
+
+    public void addSpouse(Person spouse) {
+        this.spouse = spouse;
+    }
 }
