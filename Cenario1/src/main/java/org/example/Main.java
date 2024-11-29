@@ -9,5 +9,7 @@ public class Main {
         Person lily = new Person("Lily");
         lily.addSpouse(new Person("Wilhelm"));
         lily.addChild(new Person("Bob"));
+
+        lily.printFamilyTree(0);
     }
 }

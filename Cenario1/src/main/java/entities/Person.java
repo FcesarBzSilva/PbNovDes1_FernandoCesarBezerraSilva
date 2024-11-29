@@ -40,4 +40,16 @@ public class Person {
     public void addSpouse(Person spouse) {
         this.spouse = spouse;
     }
+
+    public String toString() {
+        return name;
+
+    }
+
+    public void printFamilyTree( int numero) {
+        System.out.println(toString());
+        for (int i = 0; i < children.size(); i++) {
+            children.get(i).printFamilyTree(numero + 1);
+        }
+    }
 }
