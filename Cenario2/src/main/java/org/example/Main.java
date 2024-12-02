@@ -13,5 +13,10 @@ public class Main {
 
         Child joao = new Child("Joao", 5, paulo);
         Child maria = new Child("Maria", 12, paulo);
+
+        ferrisWheel.addPassenger(2, joao, maria);
+        ferrisWheel.addPassenger(2, joao, paulo);
+
+        ferrisWheel.printFerrisWheelStatus();
     }
 }

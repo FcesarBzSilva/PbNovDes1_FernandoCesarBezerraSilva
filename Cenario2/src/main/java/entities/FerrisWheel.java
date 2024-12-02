@@ -46,5 +46,11 @@ public class FerrisWheel {
         throw new ArithmeticException("All gondolas are currently occupied.");
     }
 
-
+    public void printFerrisWheelStatus() {
+        for (Gondola gondola : gondolas) {
+            System.out.println("Gondola " + gondola.getNumber() + ":");
+            System.out.println(" - Seat 1: " + (gondola.getSeat1() != null ? gondola.getSeat1() : "Empty"));
+            System.out.println(" - Seat 2: " + (gondola.getSeat2() != null ? gondola.getSeat2() : "Empty"));
+        }
+    }
 }
