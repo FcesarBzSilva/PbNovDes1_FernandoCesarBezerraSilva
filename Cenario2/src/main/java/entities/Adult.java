@@ -10,7 +10,6 @@ public class Adult extends Person {
         super(name, age);
     }
 
-    //Method addChild
     public void addChild(Child child) {
         children.add(child);
     }

@@ -37,6 +37,22 @@ public class FerrisWheel {
         }
     }
 
+    public void addPassenger(int gondolaNumber, Person person1) {
+        if (gondolaNumber > 18 || gondolaNumber < 1) {
+            System.out.println("Unavaliable");
+        }
+        if (gondolas[gondolaNumber].getSeat1() != null && gondolas[gondolaNumber].getSeat2() != null) {
+            gondolaNumber = verifyAvailableGondola();
+        }
+        if (person1.getAge() >= 12 ) {
+            if (gondolas[gondolaNumber -1].getSeat1() == null) {
+                gondolas[gondolaNumber -1].setSeat1(person1);
+            } else if (gondolas[gondolaNumber -1].getSeat2() == null) {
+                gondolas[gondolaNumber -1].setSeat2(person1);
+            }
+        }else System.out.println(person1.getName() +" minimum age requirement not met");
+    }
+
     public int verifyAvailableGondola(){
         for (int i = 0; i < gondolas.length; i++) {
             if (gondolas[i].getSeat1() == null && gondolas[i].getSeat2() == null) {

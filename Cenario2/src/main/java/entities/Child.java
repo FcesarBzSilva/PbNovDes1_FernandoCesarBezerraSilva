@@ -13,7 +13,6 @@ public class Child extends Person{
         super(name, age);
     }
 
-    //Getter and setter
     public Adult getResponsibleAdult() {
         return responsibleAdult;
     }
