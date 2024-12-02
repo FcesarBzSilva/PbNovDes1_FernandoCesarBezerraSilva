@@ -14,7 +14,6 @@ public class Gondola {
         this.seat2 = seat2;
     }
 
-    //getters and setters
     public int getNumber() {
         return number;
     }

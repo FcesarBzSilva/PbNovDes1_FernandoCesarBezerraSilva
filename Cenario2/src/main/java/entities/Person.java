@@ -9,7 +9,6 @@ public class Person {
         this.age = age;
     }
 
-    //Getters and setters
     public String getName() {
         return name;
     }
@@ -21,6 +20,11 @@ public class Person {
     }
     public void setAge(int age) {
         this.age = age;
+    }
+
+    @Override
+    public String toString() {
+        return name;
     }
 }
 
