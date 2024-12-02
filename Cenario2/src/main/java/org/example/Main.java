@@ -1,17 +1,25 @@
 package org.example;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+import entities.Adult;
+import entities.Child;
+import entities.FerrisWheel;
+
+
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        FerrisWheel ferrisWheel = new FerrisWheel();
+        Adult paulo = new Adult("Paulo", 42);
+        Child joao = new Child("Joao", 5, paulo);
+        Child maria = new Child("Maria", 12, paulo);
+        Child pedro = new Child("Pedro", 13);
+        Child henrique = new Child("Henrique", 10);
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+        ferrisWheel.addPassenger(2, joao, maria);
+        ferrisWheel.addPassenger(2, joao, paulo);
+        ferrisWheel.addPassenger(3, maria);
+        ferrisWheel.addPassenger(13, pedro);
+        ferrisWheel.addPassenger(16, henrique);
+
+        ferrisWheel.printFerrisWheelStatus();
     }
 }
