@@ -1,26 +1,46 @@
-# Desafio Cenario1: Projeto de Impressão de Árvore Genealógica
+# Desafio: Impressão de Árvore Genealógica em Java
 
-## Descrição
-A proposta inicial incluiu a classe `Main`, e minha tarefa foi completar a classe `Person` para que a árvore genealógica fosse impressa de acordo com as especificações do desafio. Utilizei o método `toString` e algumas técnicas de concatenação para alcançar o resultado desejado.
+Este projeto foi desenvolvido como parte de um desafio técnico no estágio. O objetivo era implementar uma estrutura de árvore genealógica em Java, utilizando orientação a objetos e boas práticas de programação.
 
-## Estrutura do Projeto
-- **Main.java**: Contém o método principal onde a árvore genealógica é construída e impressa.
-- **Person.java** (localizada no pacote `entities`): Contém a definição da classe `Person` com métodos para gerenciar relacionamentos familiares e imprimir a árvore genealógica.
+## 🌳 Descrição do Desafio
 
-## Como Executar
-1. Clone o repositório para o seu ambiente local.
-2. Importe o projeto em sua IDE preferida.
-3. Compile e execute a classe `Main` para ver a árvore genealógica sendo impressa no console conforme consta no desafio.
+Dado um esqueleto inicial com a classe `Main`, a tarefa era desenvolver a classe `Person` de forma que a árvore fosse impressa corretamente no console, respeitando os vínculos de parentesco entre os membros.
 
-## Tecnologias Utilizadas
-- Java SE 8 ou superior
+## 🧩 Estrutura do Projeto
 
+```
+Cenario1/
+├── src/
+│   └── entities/
+│       └── Person.java
+│   └── Main.java
+```
 
+- `Main.java`: Constrói e imprime a árvore genealógica.
+- `Person.java`: Define atributos e métodos para modelar os relacionamentos familiares.
 
+## 🚀 Como Executar
 
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/SEU_USUARIO/SEU_REPOSITORIO.git
+   ```
+2. Abra o projeto em sua IDE Java (Eclipse, IntelliJ, VS Code...).
+3. Compile e execute `Main.java`.
+4. Veja a árvore genealógica impressa no console.
 
+## 💻 Tecnologias Utilizadas
 
+- Java SE 8+
 
+## 📚 Conceitos Aplicados
 
+- Programação orientada a objetos
+- Encapsulamento
+- Uso do método `toString()`
+- Estruturas condicionais e de repetição
+- Concatenação de strings
 
+## 📌 Autor
 
+Desenvolvido por [Fernando Cesar Bezerra Silva](https://github.com/FcesarBzSilva) como parte de um desafio no estágio.
